@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PBL3ModelStoreContainer" CdmEntityContainer="PBL3Entities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="PBL3Model.Account">
+        <MappingFragment StoreEntitySet="Account">
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Fullname" ColumnName="Fullname" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Permission" ColumnName="Permission" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Citizens">
+      <EntityTypeMapping TypeName="PBL3Model.Citizen">
+        <MappingFragment StoreEntitySet="Citizen">
+          <ScalarProperty Name="CMND_CCCD" ColumnName="CMND/CCCD" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="birth" ColumnName="birth" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="regisDay" ColumnName="regisDay" />
+          <ScalarProperty Name="vaccination" ColumnName="vaccination" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vaccines">
+      <EntityTypeMapping TypeName="PBL3Model.Vaccine">
+        <MappingFragment StoreEntitySet="Vaccine">
+          <ScalarProperty Name="vaccineName" ColumnName="vaccineName" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
